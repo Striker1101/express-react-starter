@@ -16,7 +16,8 @@
     "server": "nodemon server/bin/www",
     "build": "react-scripts build && node copy.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"npm run serve\" \"npm run client\""
   },
   "eslintConfig": {
     "extends": [
@@ -37,7 +38,7 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^7.1.0",
+    "concurrently": "^7.6.0",
     "nodemon": "^2.0.16"
   },
   "proxy": "http://localhost:3000"
